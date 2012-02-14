@@ -1,9 +1,3 @@
-NAME
-    WWW::xkcd - Synchronous and asynchronous interfaces to xkcd comics
-
-VERSION
-    version 0.002
-
 SYNOPSIS
         use WWW::xkcd;
         my $xkcd  = WWW::xkcd->new;
@@ -98,13 +92,4 @@ OPTIONAL DEPENDENCIES
     *   AnyEvent
 
     *   AnyEvent::HTTP
-
-AUTHOR
-    Sawyer X <xsawyerx@cpan.org>
-
-COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Sawyer X.
-
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
 
