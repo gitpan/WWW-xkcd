@@ -21,7 +21,7 @@ my %module_build_args = (
     "Sawyer X <xsawyerx\@cpan.org>"
   ],
   "dist_name" => "WWW-xkcd",
-  "dist_version" => "0.002",
+  "dist_version" => "0.003",
   "license" => "perl",
   "module_name" => "WWW::xkcd",
   "recommends" => {},
