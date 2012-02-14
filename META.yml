@@ -1,0 +1,27 @@
+---
+abstract: 'Synchronous and asynchronous interfaces to xkcd comics'
+author:
+  - 'Sawyer X <xsawyerx@cpan.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Module::Build: 0.3601
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112150'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: WWW-xkcd
+requires:
+  Carp: 0
+  HTTP::Tiny: 0
+  JSON: 0
+  Try::Tiny: 0
+  strict: 0
+  warnings: 0
+version: 0.001
