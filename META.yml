@@ -11,12 +11,18 @@ configure_requires:
   ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112150'
+generated_by: 'Dist::Zilla version 4.300005, CPAN::Meta::Converter version 2.112150'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: WWW-xkcd
+no_index:
+  file:
+    - README.pod
+recommends:
+  AnyEvent: 0
+  AnyEvent::HTTP: 0
 requires:
   Carp: 0
   HTTP::Tiny: 0
@@ -24,4 +30,7 @@ requires:
   Try::Tiny: 0
   strict: 0
   warnings: 0
-version: 0.003
+resources:
+  bugtracker: http://github.com/xsawyerx/www-xkcd/issues
+  repository: http://github.com/xsawyerx/www-xkcd
+version: 0.004

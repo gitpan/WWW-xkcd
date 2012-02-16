@@ -21,10 +21,13 @@ my %module_build_args = (
     "Sawyer X <xsawyerx\@cpan.org>"
   ],
   "dist_name" => "WWW-xkcd",
-  "dist_version" => "0.003",
+  "dist_version" => "0.004",
   "license" => "perl",
   "module_name" => "WWW::xkcd",
-  "recommends" => {},
+  "recommends" => {
+    "AnyEvent" => 0,
+    "AnyEvent::HTTP" => 0
+  },
   "recursive_test_files" => 1,
   "requires" => {
     "Carp" => 0,
