@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package WWW::xkcd;
 {
-  $WWW::xkcd::VERSION = '0.004';
+  $WWW::xkcd::VERSION = '0.005';
 }
 # ABSTRACT: Synchronous and asynchronous interfaces to xkcd comics
 
@@ -46,19 +46,17 @@ sub fetch_metadata {
         } );
 
         return 0;
-    } else {
-        # this is sync
-        my $result = HTTP::Tiny->new->get($url);
-
-        $result->{'success'} or croak "Can't fetch $url: " .
-            $result->{'reason'};
-
-        my $meta = $self->_decode_json( $result->{'content'} );
-
-        return $meta;
     }
 
-    return 1;
+    # this is sync
+    my $result = HTTP::Tiny->new->get($url);
+
+    $result->{'success'} or croak "Can't fetch $url: " .
+        $result->{'reason'};
+
+    my $meta = $self->_decode_json( $result->{'content'} );
+
+    return $meta;
 }
 
 sub fetch {
@@ -135,7 +133,7 @@ WWW::xkcd - Synchronous and asynchronous interfaces to xkcd comics
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

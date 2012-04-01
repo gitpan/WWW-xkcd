@@ -10,6 +10,7 @@ my %module_build_args = (
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
+    "Test::Fatal" => 0,
     "Test::More" => 0
   },
   "configure_requires" => {
@@ -21,7 +22,7 @@ my %module_build_args = (
     "Sawyer X <xsawyerx\@cpan.org>"
   ],
   "dist_name" => "WWW-xkcd",
-  "dist_version" => "0.004",
+  "dist_version" => "0.005",
   "license" => "perl",
   "module_name" => "WWW::xkcd",
   "recommends" => {

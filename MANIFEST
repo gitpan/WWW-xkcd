@@ -8,6 +8,9 @@ README
 dist.ini
 lib/WWW/xkcd.pm
 t/00-compile.t
+t/_decode_json.t
 t/async.t
+t/fetch_fail.t
+t/fetch_metadata_fail.t
 t/release-pod-syntax.t
 t/sync.t

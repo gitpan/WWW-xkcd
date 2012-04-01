@@ -2,7 +2,7 @@ NAME
     WWW::xkcd - Synchronous and asynchronous interfaces to xkcd comics
 
 VERSION
-    version 0.004
+    version 0.005
 
 SYNOPSIS
         use WWW::xkcd;
